@@ -80,17 +80,38 @@ form {
 }
 
 form button {
-    width: 100%;
+    width: 70px;
     height: 48px;
     font-size: 1rem;
-    background-color: #e50914;
+    background: linear-gradient(to right, #fb5283, #ff3527);
     color: #fff;
     font-weight: 600;
     border: none;
     border-radius: .3rem;
     cursor: pointer;
     margin: 24px 0 12px;
+    transition: width 0.5s;
 
+}
+
+button img{
+    width: 60px;
+    display: none;
+}
+
+button:hover img{
+    display: block;
+}
+
+button:hover {
+    display: block;
+}
+
+button:hover{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .remember {
